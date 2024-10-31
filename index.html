@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <form>
+        <div>
+          <input type="text" name="display" id="display" />
+        </div>
+      </form>
+      <div class="btn">
+        <div>
+          <input type="button" value="DEL" onclick="delChar()" />
+          <input type="button" value="AC" onclick="clearDisplay()" />
+          <input
+            type="button"
+            value="."
+            class="operator"
+            onclick="appendValue('.')"
+          />
+          <input
+            type="button"
+            value="/"
+            class="operator"
+            onclick="appendValue('/')"
+          />
+        </div>
+        <div>
+          <input type="button" value="7" onclick="appendValue('7')" />
+          <input type="button" value="8" onclick="appendValue('8')" />
+          <input type="button" value="9" onclick="appendValue('9')" />
+          <input
+            type="button"
+            value="*"
+            class="operator"
+            onclick="appendValue('*')"
+          />
+        </div>
+        <div>
+          <input type="button" value="4" onclick="appendValue('4')" />
+          <input type="button" value="5" onclick="appendValue('5')" />
+          <input type="button" value="6" onclick="appendValue('6')" />
+          <input
+            type="button"
+            value="-"
+            class="operator"
+            onclick="appendValue('-')"
+          />
+        </div>
+        <div>
+          <input type="button" value="1" onclick="appendValue('1')" />
+          <input type="button" value="2" onclick="appendValue('2')" />
+          <input type="button" value="3" onclick="appendValue('3')" />
+          <input
+            type="button"
+            value="+"
+            class="operator"
+            onclick="appendValue('+')"
+          />
+        </div>
+        <div>
+          <input type="button" value="%" onclick="appendValue('%')" />
+          <input type="button" value="0" onclick="appendValue('0')" />
+          <input type="button" value="00" onclick="appendValue('00')" />
+          <input type="button" value="=" class="eqlbtn" onclick="calculate()" />
+        </div>
+      </div>
+    </div>
+    <script src="java.js"></script>
+  </body>
+</html>
